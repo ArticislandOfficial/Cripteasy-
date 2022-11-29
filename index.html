@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cripteasy</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css
+    ">
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- ============ header =============-->
+
+
+  <header class="main margendivs ">
+    <div class="textos-main contenedor contenedor-texto">
+      <h1 class="textos-main_principal titulo typed">Cripteasy </h1>
+      <p class="textos-main-second  ">Informate, descubre e invierte</p>
+      <a class="btn btn-warning " href="#contacto" role="button">Contáctame</a> 
+    </div>
+  </header>
+<!-- ============ /header =============-->
+<main>
+
+<!-- ============ seccion1 enlaces=============-->
+  <section class="  container d-flex justify-content-around  margendivs">
+      <div class="row row-cols-1 row-cols-md-3 g-4 ">
+        <div class="col contenedorCards">
+          <div class="card text-center sinBorde" style="width: 18rem">
+            <div class="card-body">
+                <img src="./img/piggy-bank.jpg" class="card-img-top" alt="...">
+           
+              <a class="boton btn btn-warning btn-ranking" href="#ranking">Ranking &raquo;</a>
+            </div>
+          </div>
+        </div>
+        <div class="col contenedorCards">
+          <div class="card text-center sinBorde"  style="width: 18rem">
+            <div class="card-body">
+                <img src="./img/grafica.jpg" class="card-img-top" alt="...">
+              <!-- <h5 class="card-title">Special title treatment</h5>
+              <p class="card-text">
+                With supporting text below as a natural lead-in to additional
+                content.
+              </p> -->
+              <a class=" boton btn btn-warning btn-grafica" href="#grafica">Gráfica &raquo;</a>
+            </div>
+          </div>
+        </div>
+        <div class="col contenedorCards">
+        <div class="card text-center sinBorde" style="width: 18rem">
+          <div class="card-body">
+            <img src="./img/checklist.jpg" class="card-img-top" alt="...">
+            <!-- <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">
+              With supporting text below as a natural lead-in to additional
+              content.
+            </p> -->
+            <a class="boton btn btn-warning  btn-deseos" href="#criptomonedas">Cambio &raquo;</a>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+<!-- ============ /seccion1 =============-->
+<!-- ============ seccion2 info =============-->
+<div class="container d-flex justify-content-around " >
+    <div class="col-md-4 ">
+      <h3 class=" featurette-heading col-mad-3">Aprende a invertir de menera segura <span class="text-muted">Cripteasy te espera</span></h3>
+      <p class="lead">Encuentra las mejores opciones de criptomonedas e incrementa tus finanzas</p>
+    </div>
+    <div class="col-md-6">
+      <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="./img/info.jpg" alt="" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em"></text></img>
+      
+    </div>
+  </div>
+<!-- ============ /seccion2 info=============-->
+<!-- ============ seccion2.1 ============= -->
+<div class="container-box container-fluid d-flex justify-content-center">
+    <h3 class="m-4 d-block  mx-auto ">Es tu momento de invertir para crecer </h3>
+  </div>
+<!-- ============ /seccion2.1 =============-->
+<!-- ============ seccion3.1 grafica                 Cesar         =============-->
+<section id="ranking" class="bg-brown">
+    <div class=" container-xxl container-sm  container-lg">
+      <div class="row mt-4">
+        <div class="col-lg-6">
+          <div class="card rounded-0">
+            <div class="card-header bg-light">
+                <h6 class="">Comparacion de criptomonedas:</h6>
+            </div>
+            <div class="card-body">
+              <div>
+                <canvas id="myChart" style="width: 200px; height: 200px;"></canvas>
+              </div>  
+            </div>
+          </div>
+        </div>
+<!--================ /grafica ===========--> 
+<!--================ tabla lista-deseos ===========-->       
+<div class="col-lg-5 " id="grafica" >
+      <div class="card rounded-0 ">
+          <div class="card-header">
+            <h6 class="mb-0">Las mejores criptomonedas</h6>
+          </div>
+          <div class="card-body" id="bestCrip">
+            <div class="card-body" id="mejoresCriptos"></div>   
+          </div>
+      </div>
+  </div>
+</section>
+<!-- ============ seccion4                    cesar               =============-->
+<div class="container-box container-fluid d-flex justify-content-center">
+    <h3 class="m-4 d-block  ">Te ayudamos a invertir - Utiliza nuestro Cotizador de Criptomonedas</h3>
+</div>
+
+<section id="cotizador" class="cotizador">
+  <div class="cont-cotizador">
+    <div class="izq-cotizador">
+      <img src="./img/Criptomoneda03.jpg">
+    </div>
+    <div class="der-cotizador">
+      <form id="cot-formulario">
+        <div class="fila">
+          <label>Selecciona una Moneda</label>
+            <select id="moneda" name="moneda" class=selector>
+              <option value="">Elige una moneda</option>
+              <option value="USD">Dolar EEUU</option>
+              <option value="MXN">Peso Mexicano</option>
+              <option value="PEN">Sol Peruano</option>
+              <option value="EUR">Euros</option>
+            </select>
+        </div>
+        <div class="fila">
+          <div>
+            <label>Selecciona una Criptomoneda</label>
+            <select id="criptomonedas" name="criptomoneda" class="selector">
+              <option value="" disabled selected>Elige una criptomoneda</option>
+            </select>
+          </div>
+        </div>
+        <div class="cont-inferior">
+          <p><input class="boton boton-ancho" type="submit" value="Cotizar" /></p>
+        </div>
+        <div id="resultado" class="resultado"></div>
+      </form>
+    </div>
+  </div>
+</section>
+<!-- ============ /seccion4 ============= DANIEL -->
+</main>
+
+  <!-- <p class=" container-lg" ><a type="button" class="btn btn-warning" href="#">Inicio</a></p>
+</main> -->
+<!-- ============ footer =============-->
+<footer id="contacto" class="contenedor contenedor-header">
+   <nav class="contenedor_nav">
+        <a class="formatonav" href="https://github.com/MeliBis"><img class="cardM_content__picture" src="https://lh3.googleusercontent.com/ogw/ADea4I6eRACk-ecNhWRgrANsKkqUjPSrBqWpTMSkCcoPew=s32-c-mo" alt="avatar ">Melissa Barrios</a>
+        <a class="formatonav" href="https://github.com/ArticislandOfficial"><img class="cardM_content__picture" src="https://lh3.googleusercontent.com/ogw/ADea4I5H8Ysw5o77OkZ-06o_Y-13qZJICKciSkyv9TP2jfY=s32-c-mo" alt="avatar">Cesar Reyes</a>
+        <a class="formatonav" href=""><img class="cardM_content__picture" src="https://lh3.googleusercontent.com/a-/AFdZucp4wITR9L56EnSctFfyjxntyC-D5KTFxSFRhCY9YH4=s64-p-k-no" alt="avatar ">Jesus Castillo</a>
+        <a class="formatonav" href="https://github.com/DannyNN"><img class="cardM_content__picture" src="https://lh3.googleusercontent.com/ogw/ADea4I44T79yoMui9BUBC_0zVDlRwrgyy3w6pWyxikNysQ=s64-c-mo" alt="avatarSuscribete">Daniel Marino</a>
+      </nav>
+</footer>
+
+<!-- ============ Conexion con APIS,CHART.JS  =============-->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="module"  src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./scripts/grafica-cv.js"></script>
+  <script src="./scripts/typing.js"></script>
+</body>
+</html>
+
